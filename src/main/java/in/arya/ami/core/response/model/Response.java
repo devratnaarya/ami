@@ -1,13 +1,18 @@
 package in.arya.ami.core.response.model;
 
-import java.sql.Timestamp;
+import java.util.Date;
 
 import lombok.Data;
 
 @Data
 public class Response<T> {
 	
-	private Timestamp timestamp;
+	public Response(T t) {
+		this.timestamp = new Date().getTime();
+		this.payload = t;
+	}
+	
+	private Long timestamp;
 	
 	private T payload;
 

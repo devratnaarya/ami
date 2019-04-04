@@ -1,12 +1,14 @@
 package in.arya.ami.training.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import org.springframework.util.StringUtils;
 
 import in.arya.ami.training.model.Training;
 import in.arya.ami.training.repository.TrainingRepository;
 import in.arya.ami.training.service.TrainingService;
 
+@Service
 public class TrainingServiceImpl implements TrainingService {
 	
 	private TrainingRepository repository;

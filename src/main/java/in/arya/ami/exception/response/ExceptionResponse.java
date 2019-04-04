@@ -1,4 +1,4 @@
-package exception.response;
+package in.arya.ami.exception.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
